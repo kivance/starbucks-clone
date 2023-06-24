@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import BigCard from './components/BigCard'
+import Content from "./components/Content";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App h-screen overflow-hidden max-[768px]:overflow-visible max-[768px]:w-screen">
+      <Header></Header>
+      <div className="flex max-[768px]:flex-col ">
+        <BigCard></BigCard>
+        <div className="w-full max-h-screen mt-20 max-[768px]:  max-[768px]:overflow-visible overflow-scroll">
+          <Content></Content>
+        </div>
+      </div>
     </div>
   );
 }
