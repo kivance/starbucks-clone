@@ -62,7 +62,7 @@ const cards = [
     {
         id: 7,
         title: 'Aydınlık ve umut dolu bir gelecek için birlikte olmanın önemine inanıyor, afet bölgesindeki iyileşme yolculuğuna destek vermek için kaynaklarımızı ve kalplerimizi sunmaya devam ediyoruz.',
-        img: 'https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6InJic19hbm9ueW1vdXNfdXNlciIsImFub255bW91cyI6dHJ1ZSwicHJvamVjdElkIjoiY2MxZWVjMDE3NDViNGMwYmEyOWQ2M2IxZmU3ZTZjY2YiLCJ1c2VySWQiOiJhbm9ueW1vdXNfMDNmNmI4OTQyNjQ1NGE0YThjMzQ3YjRkODEzNTQ0MzUiLCJ0aW1lc3RhbXAiOjE2ODc2MDE0NTg4NDcsImNsYWltcyI6e30sImlhdCI6MTY4NzYwMTQ1OCwiZXhwIjoxNjg3NjAxNzU4LCJpc3MiOiJjb3JlLnJ0YnMuaW8ifQ.WOyK_WX5fUbkpgclXWH5kJn71AqCD5aeSKrc_8XIUY0&data=eyJpbWFnZUlkIjoiNzEyZjhmYzYtNWVhNi00NTJmLThhMWYtYzViMDU0YzY0YjIzIiwiZml0IjoiY292ZXIifQ&culture=en-US&platform=WEB&',
+        img: 'https://media.discordapp.net/attachments/1021852587579936849/1148169531949330473/Frame_8.png?width=612&height=612 ',
         content: 'Dünyaya yayılan büyük ailemiz sayesinde deprem bölgesindeki yaraların sarılmasında kullanılmak üzere maddi yardımlarımızı ulaştırmaya devam ediyoruz. Yerel sosyal sorumluluk partnerlerimiz Tohum Otizm Vakfı ve AÇEV ile bölgede hayatın normale dönmesi ve geleceğimiz olan çocuklarımız ile ailelerinin eğitim ihtiyaçlarının desteklenmesi için projelerimizi hayata geçiriyoruz. Deprem bölgesinde gerçekleştirdiğimiz yardım çalışmalarıyla ilgili detaylı bilgi için;',
         button1: 'Daha fazla bilgi',
         button1Link: '',
@@ -73,9 +73,9 @@ const cards = [
 
 function Content() {
   return (
-    <div className='px-4 min-[900px]:px-12 py-6 pb-20 max-[1023px]:pb-4'>
-        <img src="https://core.rtbs.io/user/action/cc1eec01745b4c0ba29d63b1fe7e6ccf/rbs.storage.get.GET_IMAGE?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6InJic19hbm9ueW1vdXNfdXNlciIsImFub255bW91cyI6dHJ1ZSwicHJvamVjdElkIjoiY2MxZWVjMDE3NDViNGMwYmEyOWQ2M2IxZmU3ZTZjY2YiLCJ1c2VySWQiOiJhbm9ueW1vdXNfMDNmNmI4OTQyNjQ1NGE0YThjMzQ3YjRkODEzNTQ0MzUiLCJ0aW1lc3RhbXAiOjE2ODc1OTc2NTQ2MTgsImNsYWltcyI6e30sImlhdCI6MTY4NzU5NzY1NCwiZXhwIjoxNjg3NTk3OTU0LCJpc3MiOiJjb3JlLnJ0YnMuaW8ifQ.TBuXKWfv9EPLYArfE5Rqqgd0_AikvWWmDTT3ka8TjOo&data=eyJpbWFnZUlkIjoiZTg5MzQ4MmUtYThlZC00ZGQ2LWFmZGQtZTljY2E0YTBhZWRiIiwiZml0IjoiY292ZXIifQ&culture=en-US&platform=WEB&" alt="" />
-        <div className=' min-[900px]:px-12 mt-10'>
+    <div className='px-4 min-[900px]:px-4 py-4 pb-20 max-[1023px]:pb-4'>
+        <img className='rounded shadow-sm' src="https://media.discordapp.net/attachments/1021852587579936849/1148169532205174876/kvncbucks.png?width=1440&height=576" alt="" />
+        <div className=' min-[900px]:px-10 mt-6'>
             <h1 className='font-bold text-xl'>Tropik serinlik, hindistan cevizi aromasıyla 😍</h1>
             <p className='font-semibold mt-4 text-base'>Mango ve ejder meyveli Refresha® lezzeti, şimdi hindistan cevizi aromasıyla: Yeni Dragon Coconut Refresha®, kısa süreliğine buralarda! 🥥🥭🌴</p>
             <button className='bg-green-700 rounded-full text-white font-semibold mt-4 px-4 py-1'>Daha fazla bilgi</button>
@@ -83,7 +83,7 @@ function Content() {
         <div className='flex flex-col gap-10 mt-10'>
             {cards.map((card) =>
                 <div key={card.id} className='flex flex-col min-[600px]:flex-row items-start gap-6'>
-                    <img className='w-full min-[600px]:w-2/4 ' src={card.img} alt="" />
+                    <img className='w-full min-[600px]:w-2/4 rounded shadow-sm' src={card.img} alt="" />
                     <div>
                         <h1 className='font-bold text-2xl'>{card.title}</h1>
                         <p className='font-medium mt-2 text-base mb-5'>{card.content}</p>
